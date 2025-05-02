@@ -62,3 +62,7 @@ class Dealer:
         print(self.player_cards, self.player_count)
         for i in self.player_cards:
             i.show()
+
+    def get_card(self):
+        return self.path_actions_cards.pop() if self.path_actions_cards else None
+

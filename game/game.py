@@ -33,19 +33,34 @@ class Game:
 
         move = json.loads(move)
         card = self.check_card(move["card"], player_id)
+        if type(card) is str:
+            return False
+
         self.board.add_item(move["turn"][0], move["turn"][1], card)
 
         # write crds putting logic
-        return True
+        check = True
+        if check:
+            self.player_cards_update(self.lobby.get_player(player_id))
+        return check
 
     def check_card(self, id, player_id):
         player = self.lobby.get_player(player_id)
         if player:
-            for i in player.cards:
-                if i.id == id:
-                    return i
+            for index, card in enumerate(player.cards):
+                if card.id == id:
+                    player.cards.pop(index)
+                    return card
             return "Card not found in player hand"
         else:
             return "Player not found in Lobby"
+
+    def player_cards_update(self, player):
+        card = self.dealer.get_card()
+        if card is not None:
+            player.cards.append(card)
+
+    def get_allowed_coords(self):
+        return [list(coord) for coord in self.board.allowed_coords]
 
 

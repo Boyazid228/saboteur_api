@@ -27,6 +27,8 @@ class Board:
                                       "player": "", "start": False, "finish": True})),
         }
 
+        self.allowed_coords = {(0, 1), (1, 0), (-1, 0), (0, -1)}
+
     def to_json(self):
         return {
             f"{x},{y}": value.get_json()
@@ -40,8 +42,19 @@ class Board:
         ]
 
     def add_item(self, x, y, card):
-        self._board[(x, y)] = card
+        if (x, y) not in self._board:
+            self._board[(x, y)] = card
+            self.update_allowed_coords(x, y, card)
         return self._board
+
+    def update_allowed_coords(self, x, y, card):
+        coord = (x, y)
+        self.allowed_coords.discard(coord)
+        direction = [[-1, 0], [1, 0], [0, 1], [0, -1]]
+
+        for i in direction:
+            if (x+i[0], y+i[1]) not in self._board:
+                self.allowed_coords.add((x+i[0], y+i[1]))
 
     def show(self, size=9):
         # size — радиус сетки: от -size до +size

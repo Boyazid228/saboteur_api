@@ -167,6 +167,16 @@ class LobbyConsumer(AsyncWebsocketConsumer):
                                     'status': 'waiting'
                                 }
                             )
+                            cards_json = [card.get_json() for card in self.player.cards]
+                            await self.channel_layer.send(
+                                self.player.id,
+                                {
+                                    'type': 'personal.message',
+                                    'message': cards_json,
+                                    'player': 'system',
+                                    'status': 'player_cards'
+                                }
+                            )
                             g.next_turn()
                             cur_player = g.current_player()
                             await self.channel_layer.group_send(
@@ -186,6 +196,15 @@ class LobbyConsumer(AsyncWebsocketConsumer):
                                     'message': g.board.to_json(),
                                     'player': 'system',
                                     'status': 'board'
+                                }
+                            )
+                            await self.channel_layer.group_send(
+                                self.lobby_group_name,
+                                {
+                                    'type': 'chat.message',
+                                    'message': g.get_allowed_coords(),
+                                    'player': 'system',
+                                    'status': 'allowedCoords'
                                 }
                             )
 
