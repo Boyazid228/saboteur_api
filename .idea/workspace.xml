@@ -4,6 +4,7 @@
     <list default="true" id="e1cc0924-d984-492c-943b-285350f42d8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/cards_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/cards_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/consumers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/dealer.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/dealer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.py" afterDir="false" />
@@ -52,7 +53,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.HoughCircle">
+  <component name="RunManager" selected="Python.uvicorn">
     <configuration name="HoughCircle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="apisob" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,7 +164,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="uvicorn" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="apisob" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\unityiz\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="uvicorn" />
+      <option name="PARAMETERS" value="saboteur_api.asgi:application --reload" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python.uvicorn" />
       <item itemvalue="Python.HoughCircle" />
       <item itemvalue="Python.board" />
       <item itemvalue="Python.prog2-12" />
@@ -172,8 +196,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HoughCircle" />
         <item itemvalue="Python.board" />
+        <item itemvalue="Python.HoughCircle" />
         <item itemvalue="Python.prog2-21" />
         <item itemvalue="Python.prog2-13" />
         <item itemvalue="Python.prog2-12" />
@@ -203,7 +227,9 @@
       <workItem from="1744692325407" duration="117000" />
       <workItem from="1744948179844" duration="575000" />
       <workItem from="1745299481900" duration="1248000" />
-      <workItem from="1746159215373" duration="8144000" />
+      <workItem from="1746159215373" duration="8832000" />
+      <workItem from="1746190629847" duration="2080000" />
+      <workItem from="1746524571716" duration="10221000" />
     </task>
     <servers />
   </component>
@@ -226,8 +252,9 @@
     <SUITE FILE_PATH="coverage/apisob$example4_23.coverage" NAME="example4-23 Coverage Results" MODIFIED="1744208531515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
     <SUITE FILE_PATH="coverage/saboteur_api$HoughCircle.coverage" NAME="HoughCircle Coverage Results" MODIFIED="1744948649081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week5" />
     <SUITE FILE_PATH="coverage/apisob$prog2_12.coverage" NAME="prog2-12 Coverage Results" MODIFIED="1744246327601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
-    <SUITE FILE_PATH="coverage/saboteur_api$board.coverage" NAME="board Coverage Results" MODIFIED="1744617399350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/saboteur_api$board.coverage" NAME="board Coverage Results" MODIFIED="1746192953498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
     <SUITE FILE_PATH="coverage/apisob$prog2_13.coverage" NAME="prog2-13 Coverage Results" MODIFIED="1744246503041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
+    <SUITE FILE_PATH="coverage/saboteur_api$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1746194121238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/apisob$prog2_11.coverage" NAME="prog2-11 Coverage Results" MODIFIED="1744244393015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
   </component>
 </project>

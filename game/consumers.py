@@ -121,7 +121,7 @@ class LobbyConsumer(AsyncWebsocketConsumer):
                         self.lobby_group_name,
                         {
                             'type': 'chat.message',
-                            'message': g.board.to_json(),
+                            'message': g.board.get_board(),
                             'player': 'system',
                             'status': 'board'
                         }
@@ -193,7 +193,7 @@ class LobbyConsumer(AsyncWebsocketConsumer):
                                 self.lobby_group_name,
                                 {
                                     'type': 'chat.message',
-                                    'message': g.board.to_json(),
+                                    'message': g.board.get_board(),
                                     'player': 'system',
                                     'status': 'board'
                                 }
@@ -213,9 +213,9 @@ class LobbyConsumer(AsyncWebsocketConsumer):
                                 self.player.id,
                                 {
                                     'type': 'personal.message',
-                                    'message': 'Error Turn! do agin',
+                                    'message': g.board.get_board(),
                                     'player': 'system',
-                                    'status': 'turn'
+                                    'status': 'error_turn'
                                 }
                             )
 

@@ -55,7 +55,10 @@ class Dealer:
     def deal_game_cards(self):
         temp = []
         for i in range(3):
-            temp.append(self.path_actions_cards.pop())
+            if self.path_actions_cards:
+                temp.append(self.path_actions_cards.pop())
+            else:
+                break
         return temp
 
     def show(self):
