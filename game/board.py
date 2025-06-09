@@ -1,10 +1,13 @@
 from game.card import Card
 import json
+from collections import deque
+import heapq
+import copy
 
 
 class Board:
     def __init__(self):
-        self._board = {
+        self.BOARD = {
             (0, 0): Card("start", 'path',
                          json.dumps({"img": "start.jpg", "type": "path", "matrix": [[0, 1, 0], [1, 1, 1], [0, 1, 0]],
                                      "gols": 0,
@@ -12,22 +15,24 @@ class Board:
                                      "player": "", "start": True, "finish": False})),
             (8, 2): Card("finish1", 'path',
                          json.dumps({"img": "stone.jpg", "type": "path", "matrix": [[0, 1, 0], [1, 1, 1], [0, 1, 0]],
-                                     "gols": 0,
+                                     "gold": 0,
                                      "action": "",
                                      "player": "", "start": False, "finish": True})),
             (8, 0): Card("finish2", 'path',
                          json.dumps(
-                             {"img": "gold.jpg", "type": "path", "matrix": [[0, 1, 0], [1, 1, 1], [0, 1, 0]], "gols": 1,
+                             {"img": "gold.jpg", "type": "path", "matrix": [[0, 1, 0], [1, 1, 1], [0, 1, 0]], "gold": 1,
                               "action": "",
                               "player": "", "start": False, "finish": True})),
             (8, -2): Card("finish3", 'path',
-                          json.dumps({"img": "stone.jpg", "type": "path", "matrix": [[0, 1, 0], [1, 1, 1], [0, 1, 0]],
-                                      "gols": 0,
+                          json.dumps({"img": "stone2.jpg", "type": "path", "matrix": [[0, 1, 0], [1, 1, 1], [0, 1, 0]],
+                                      "gold": 0,
                                       "action": "",
                                       "player": "", "start": False, "finish": True})),
+
         }
 
-        self.allowed_coords = {(0, 1), (1, 0), (-1, 0), (0, -1)}
+        self.show_finish = []
+        self.HIDDEN_CARDS = [(8, 2), (8, 0), (8, -2)]
 
     def to_json(self, board):
         return {
@@ -38,59 +43,46 @@ class Board:
     def to_list(self):
         return [
             {"x": x, "y": y, "value": value.get_json()}
-            for (x, y), value in self._board.items()
+            for (x, y), value in self.BOARD.items()
         ]
 
-    def add_item(self, x, y, card):
-        if (x, y) not in self._board:
-            self._board[(x, y)] = card
-            self.update_allowed_coords(x, y, card)
-        return self._board
-
-    def update_allowed_coords(self, x, y, card):
-        coord = (x, y)
-        self.allowed_coords.discard(coord)
-        direction = [[-1, 0], [1, 0], [0, 1], [0, -1]]
-        possible_path = [[1, 0], [1, 2], [2, 1], [0, 1]]
-        matrix = json.loads(card.card_data)["matrix"]
-
-        for index, i in enumerate(direction):
-            if (x + i[0], y + i[1]) in self._board:
-                continue
-
-            px, py = possible_path[index]
-            value = matrix[2 - px][2 - py] if card.is_rotated else matrix[px][py]
-
-            if value:
-                self.allowed_coords.add((x + i[0], y + i[1]))
+    def get_hidden_card(self):
+        return Card("hidden", 'path', json.dumps({
+            "img": "hidden.jpg", "type": "path", "matrix": [],
+            "gols": 0, "action": "", "player": "", "start": False, "finish": False
+        }))
 
     def get_board(self):
-        temp = self._board
-        temp[(8, 2)] = Card("hidden", 'path', json.dumps({
-            "img": "hidden.jpg", "type": "path", "matrix": [],
-            "gols": 0, "action": "", "player": "", "start": False, "finish": False
-        }))
-        temp[(8, 0)] = Card("hidden", 'path', json.dumps({
-            "img": "hidden.jpg", "type": "path", "matrix": [],
-            "gols": 0, "action": "", "player": "", "start": False, "finish": False
-        }))
-        temp[(8, -2)] = Card("hidden", 'path', json.dumps({
-            "img": "hidden.jpg", "type": "path", "matrix": [],
-            "gols": 0, "action": "", "player": "", "start": False, "finish": False
-        }))
+        temp = copy.deepcopy(self.BOARD)
+
+        for pos in self.HIDDEN_CARDS:
+            if pos not in self.show_finish:
+                temp[pos] = self.get_hidden_card()
+
         return self.to_json(temp)
 
     def has_card_at(self, x, y):
-        return (x, y) in self._board
+        return (x, y) in self.BOARD
 
     def get_card_at(self, x, y):
-        return self._board.get((x, y))
+        return self.BOARD.get((x, y))
+
+    def get_board_copy(self):
+        return copy.deepcopy(self.BOARD)
+
+    def remove_element(self, x, y):
+        if self.BOARD.get((x, y)):
+            del self.BOARD[(x, y)]
+            return True
+        else:
+            return False
+
     def show(self, size=9):
         # size — радиус сетки: от -size до +size
         for y in range(size, -1 - size, -1):  # от +size до -size (сверху вниз)
             row = ''
             for x in range(-size, size + 1):
-                cell = self._board.get((x, y), ' ')
+                cell = self.BOARD.get((x, y), ' ')
                 symbol = {
                     'start': 'S',
                     'gold': 'G',

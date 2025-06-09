@@ -6,6 +6,11 @@ class Player:
         self._cards = []
         self._status = 'Normal'
         self._player_card = None
+        self._see_card = None
+
+        self.pickaxe = True
+        self.lantern = True
+        self.cart = True
 
     @property
     def id(self):
@@ -58,3 +63,30 @@ class Player:
     @player_card.setter
     def player_card(self, value):
         self._player_card = value
+
+    @property
+    def see_card(self):
+        return self._see_card
+
+    @see_card.setter
+    def see_card(self, value):
+        self._see_card = value
+
+    def get_player_json(self):
+        return {
+            'id': self.id,
+            'pickaxe': self.pickaxe,
+            'lantern': self.lantern,
+            'cart': self.cart
+
+        }
+
+    def check_status(self):
+        self.status = 'Normal' if self.cart and self.pickaxe and self.lantern else 'Blocked'
+
+    def remove_card(self, rm_card):
+        for index, card in enumerate(self._cards):
+            if card.id == rm_card.id:
+                self._cards.pop(index)
+                return True
+        return False

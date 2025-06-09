@@ -24,6 +24,16 @@ class Dealer:
         self.path_actions_cards = []
         self.player_cards = []
         self.player_count = 0
+        self.gold_cards = [
+
+            {"img": "gold1.jpg", "type": "gold", "matrix": [], "golds": 1, "action": "", "player": "", "start": False,
+             "finish": False},
+            {"img": "gold2.jpg", "type": "gold", "matrix": [], "golds": 2, "action": "", "player": "", "start": False,
+             "finish": False},
+            {"img": "gold3.jpg", "type": "gold", "matrix": [], "golds": 3, "action": "", "player": "", "start": False,
+             "finish": False},
+        ]
+        self.gold_cards_for_players = []
 
     def start(self, player_count):
         self.player_count = player_count
@@ -33,13 +43,13 @@ class Dealer:
     def deal_player_cards(self):
         if self.player_count == 3:
             self.player_cards.append(Card(get_random_token(), 'player', json.dumps(
-                {"img": "player.jpg", "type": "player",
+                {"img": "saboteur.jpg", "type": "player",
                  "player": "saboteur",
                  "start": False, "finish": False})))
 
             for i in range( self.player_count-1):
                 self.player_cards.append(Card(get_random_token(), 'player', json.dumps(
-                {"img": "player.jpg", "type": "player",
+                {"img": "miner.jpg", "type": "player",
                  "player": "player",
                  "start": False, "finish": False})))
 
@@ -68,4 +78,15 @@ class Dealer:
 
     def get_card(self):
         return self.path_actions_cards.pop() if self.path_actions_cards else None
+
+    def get_gold_cards(self):
+        self.gold_cards_for_players = [random.choices(self.gold_cards, k=1)[0] for _ in range(self.player_count-1)]
+        return self.gold_cards_for_players
+
+    def pop_gold(self, gold_count):
+        for i, card in enumerate(self.gold_cards_for_players):
+
+            if card['golds'] == int(gold_count):
+                return [self.gold_cards_for_players.pop(i)]
+        return []
 

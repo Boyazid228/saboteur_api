@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e1cc0924-d984-492c-943b-285350f42d8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/test_pathfinding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/apisob.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apisob.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/card.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/card.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/cards_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/cards_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/consumers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/dealer.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/dealer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,25 +56,25 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/unityiz/PycharmProjects/saboteur_api&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/unityiz/PycharmProjects/pythonProject&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.uvicorn">
-    <configuration name="HoughCircle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for test_pathfinding.TestPathFinding">
+    <configuration name="img6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="apisob" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\unityiz\PycharmProjects\djangoProject\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="D:/computer vision/week5" />
+      <option name="SDK_HOME" value="C:\Users\unityiz\anaconda3\envs\cv\python.exe" />
+      <option name="WORKING_DIRECTORY" value="D:/computer vision/week8/hw" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:/computer vision/week5/HoughCircle.py" />
+      <option name="SCRIPT_NAME" value="D:/computer vision/week8/hw/img6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,86 +83,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="board" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reviewtask0502" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="apisob" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/game" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/board.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="prog2-12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="apisob" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/computer vision/week4/practice4" />
+      <option name="SDK_HOME" value="C:\Users\unityiz\anaconda3\envs\cv\python.exe" />
+      <option name="WORKING_DIRECTORY" value="D:/computer vision/week8/hw" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:/computer vision/week4/practice4/prog2-12.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="prog2-13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="apisob" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/computer vision/week4/practice4" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:/computer vision/week4/practice4/prog2-13.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="prog2-21" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="apisob" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/computer vision/week4/practice4" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:/computer vision/week4/practice4/prog2-21.py" />
+      <option name="SCRIPT_NAME" value="D:/computer vision/week8/hw/reviewtask0502.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,21 +127,66 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_pathfinding.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="apisob" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_pathfinding.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_pathfinding.TestPathFinding" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="apisob" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_pathfinding.TestPathFinding&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_pathfinding.TestPathFinding.test_path_exists" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="apisob" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_pathfinding.TestPathFinding.test_path_exists&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.uvicorn" />
-      <item itemvalue="Python.HoughCircle" />
-      <item itemvalue="Python.board" />
-      <item itemvalue="Python.prog2-12" />
-      <item itemvalue="Python.prog2-13" />
-      <item itemvalue="Python.prog2-21" />
+      <item itemvalue="Python.img6" />
+      <item itemvalue="Python.reviewtask0502" />
+      <item itemvalue="Python tests.Python tests in test_pathfinding.py" />
+      <item itemvalue="Python tests.Unittests for test_pathfinding.TestPathFinding" />
+      <item itemvalue="Python tests.Unittests for test_pathfinding.TestPathFinding.test_path_exists" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.board" />
-        <item itemvalue="Python.HoughCircle" />
-        <item itemvalue="Python.prog2-21" />
-        <item itemvalue="Python.prog2-13" />
-        <item itemvalue="Python.prog2-12" />
+        <item itemvalue="Python tests.Unittests for test_pathfinding.TestPathFinding" />
+        <item itemvalue="Python tests.Unittests for test_pathfinding.TestPathFinding.test_path_exists" />
+        <item itemvalue="Python tests.Python tests in test_pathfinding.py" />
+        <item itemvalue="Python.img6" />
+        <item itemvalue="Python.reviewtask0502" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +215,18 @@
       <workItem from="1745299481900" duration="1248000" />
       <workItem from="1746159215373" duration="8832000" />
       <workItem from="1746190629847" duration="2080000" />
-      <workItem from="1746524571716" duration="10221000" />
+      <workItem from="1746524571716" duration="10817000" />
+      <workItem from="1746586846836" duration="13012000" />
+      <workItem from="1746688410537" duration="3803000" />
+      <workItem from="1747825416459" duration="7777000" />
+      <workItem from="1747871324748" duration="17863000" />
+      <workItem from="1747970842366" duration="24179000" />
+      <workItem from="1748068730648" duration="32000" />
+      <workItem from="1748868758304" duration="4039000" />
+      <workItem from="1749120684389" duration="7362000" />
+      <workItem from="1749211730490" duration="4729000" />
+      <workItem from="1749277341206" duration="23018000" />
+      <workItem from="1749388507174" duration="29655000" />
     </task>
     <servers />
   </component>
@@ -248,12 +245,17 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/saboteur_api$Unittests_for_test_pathfinding_TestPathFinding.coverage" NAME="Unittests for test_pathfinding.TestPathFinding Coverage Results" MODIFIED="1747982631669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/apisob$prog2_12.coverage" NAME="prog2-12 Coverage Results" MODIFIED="1744246327601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
+    <SUITE FILE_PATH="coverage/saboteur_api$board.coverage" NAME="board Coverage Results" MODIFIED="1746192953498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/saboteur_api$Unittests_for_test_pathfinding_TestPathFinding_test_path_exists.coverage" NAME="Unittests for test_pathfinding.TestPathFinding.test_path_exists Coverage Results" MODIFIED="1747889999311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/saboteur_api$reviewtask0502.coverage" NAME="reviewtask0502 Coverage Results" MODIFIED="1746598613829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week8/hw" />
+    <SUITE FILE_PATH="coverage/apisob$prog2_13.coverage" NAME="prog2-13 Coverage Results" MODIFIED="1744246503041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
     <SUITE FILE_PATH="coverage/apisob$prog2_21.coverage" NAME="prog2-21 Coverage Results" MODIFIED="1744248628517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
     <SUITE FILE_PATH="coverage/apisob$example4_23.coverage" NAME="example4-23 Coverage Results" MODIFIED="1744208531515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
     <SUITE FILE_PATH="coverage/saboteur_api$HoughCircle.coverage" NAME="HoughCircle Coverage Results" MODIFIED="1744948649081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week5" />
-    <SUITE FILE_PATH="coverage/apisob$prog2_12.coverage" NAME="prog2-12 Coverage Results" MODIFIED="1744246327601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
-    <SUITE FILE_PATH="coverage/saboteur_api$board.coverage" NAME="board Coverage Results" MODIFIED="1746192953498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
-    <SUITE FILE_PATH="coverage/apisob$prog2_13.coverage" NAME="prog2-13 Coverage Results" MODIFIED="1744246503041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
+    <SUITE FILE_PATH="coverage/saboteur_api$img6.coverage" NAME="img6 Coverage Results" MODIFIED="1746598913710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week8/hw" />
+    <SUITE FILE_PATH="coverage/saboteur_api$.coverage" NAME=" Coverage Results" MODIFIED="1747883798384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/saboteur_api$uvicorn.coverage" NAME="uvicorn Coverage Results" MODIFIED="1746194121238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/apisob$prog2_11.coverage" NAME="prog2-11 Coverage Results" MODIFIED="1744244393015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/computer vision/week4/practice4" />
   </component>

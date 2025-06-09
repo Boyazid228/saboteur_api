@@ -1,3 +1,6 @@
+import json
+
+
 class Card:
 
     def __init__(self, id, type, card_data):
@@ -18,3 +21,10 @@ class Card:
 
         }
 
+    def get_data(self):
+        return json.loads(self.card_data)
+
+    def set_matrix(self, new_matrix):
+        data = json.loads(self.card_data)
+        data["matrix"] = new_matrix
+        self.card_data = json.dumps(data)
