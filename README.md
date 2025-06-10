@@ -4,7 +4,7 @@ This is an API built with Django, using Redis for caching/data storage and Uvico
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.8+ (Python 3.12.0)
 - Redis Server
 - pip (Python package installer)
 - Git
