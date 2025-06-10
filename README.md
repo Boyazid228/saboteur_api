@@ -30,5 +30,4 @@ redis-server
 uvicorn saboteur_api.asgi:application --reload
 
 ## Documentation
-
-Open the file [docs/docs.pdf] to view the documentation.
+ - Open the file [docs/docs.pdf] to view the documentation.
