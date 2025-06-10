@@ -28,3 +28,7 @@ redis-server
 
 # 5. Run the application with Uvicorn
 uvicorn saboteur_api.asgi:application --reload
+
+## Documentation
+
+Open the file [docs/docs.pdf] to view the documentation.
